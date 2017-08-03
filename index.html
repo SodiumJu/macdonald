@@ -31,6 +31,21 @@
 			opacity:0.1;
 			bottom:0px; 
 		}
+		.clock{
+			color: white;
+			font-size: 70px;
+			z-index:-20;
+			background-image:url('11.png');
+    		background-repeat:no-repeat;
+    		background-size:cover;
+    		width:100%;
+			height:50vh;
+			position:fixed;
+			bottom:0px;
+			text-align:center; 
+			line-height:50vh;
+
+		}
 		
 	</style>
 
@@ -46,6 +61,7 @@
 	 	}
 	 	else{
 	 		$(".back").css("background-image","url('photo_2017-08-02_15-16-09.jpg')");
+	 		$(".clock").css("z-index","20");
 	 	}
 	 	
 	 		 }
@@ -53,6 +69,7 @@
 	</script>
 <div class="back">	
 	<div class="btn" onclick="appear()"></div>
+	<div class="clock" align="center" ><u>優惠倒數</u></div>
 </div>
 
 </body>
