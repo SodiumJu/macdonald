@@ -33,7 +33,7 @@
 		}
 		.clock{
 			color: white;
-			font-size: 70px;
+			font-size: 50px;
 			z-index:-20;
 			background-image:url('11.png');
     		background-repeat:no-repeat;
@@ -53,6 +53,10 @@
 <body>
 <script>
 	var count=0;
+	var timer=200;
+	function myTimer(){
+
+	}
 	 function appear(){
 	 	if(count==0){
 	 		$(".back").css("background-image","url('photo_2017-08-03_13-26-13.jpg')");
@@ -62,6 +66,8 @@
 	 	else{
 	 		$(".back").css("background-image","url('photo_2017-08-02_15-16-09.jpg')");
 	 		$(".clock").css("z-index","20");
+	 		setInterval(myTimer, 1000);
+	 		
 	 	}
 	 	
 	 		 }
