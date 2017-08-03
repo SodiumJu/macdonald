@@ -31,29 +31,26 @@
 			opacity:0.1;
 			bottom:0px; 
 		}
-		.pic{
-			display: none;
-			width: 60vh;
-
-		}
+		
 	</style>
 	<script>
-	function myFunction() {
-    	alert("確認兌換優惠");
-							}
-	  ConfirmDialog('Are you sure');
+	var count=0;
 	 function appear(){
-	 	$(".pic").css("display","inline");	 }
-	 function disappear(){
-	 	$(".pic").css("display","none");	 }
+	 	if(count==0){
+	 		$(".back").css("background-image","url('photo_2017-08-03_13-26-13.jpg')");
+	 		count++;
+
+	 	}
+	 	else{
+	 		$(".back").css("background-image","url('photo_2017-08-02_15-16-09.jpg')");
+	 	}
+	 	
+	 		 }
+	 
 	</script>
 </head>
 <body>
-<div class="back">
-	<div style="right:50vh; top:50vh; position: fixed;" >
-		<img class="pic" src="shit.png" onclick="disappear()">
-	</div>
-	
+<div class="back">	
 	<div class="btn" onclick="appear()"></div>
 </div>
 
